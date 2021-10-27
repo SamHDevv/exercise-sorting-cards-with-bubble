@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+
+    <!-- FontAwesome KIT -->
     <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@bf7775b/css/all.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
+      type="text/css"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style CSS -->
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Sorting Cards with Bubble</title>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <main>
+      <section id="bubbleForm">
+        <div class="cardsForm">
+          <input type="text" id="cantInput" placeholder="Number of cards" />
+          <button id="drawBtn">Draw</button>
+          <button id="sortBtn">Sort</button>
+        </div>
+
+        <div id="cardsDeck"></div>
+      </section>
+
+      <h1 class="title">Bubble Log</h1>
+      <section id="bubbleLog"></section>
+    </main>
+
+    <!-- JS -->
+    <script src="app.js"></script>
   </body>
 </html>
